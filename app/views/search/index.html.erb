@@ -1,3 +1,12 @@
 <h2>Characters</h2>
 
 <h3>Total Fire Nation Members: <%= @total %></h3>
+
+<section class="members-info">
+  <h3>Members</h3>
+  <ul>
+    <% @characters.each do |character| %>
+      <b><li><%= character %></li></b>
+    <% end %>
+  </ul>
+</section>
