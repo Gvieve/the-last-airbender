@@ -5,7 +5,7 @@ describe "As a user, when I visit '/search' page after selecting a search option
     # @nation = 'fire_nation'
     visit search_path({nation: 'fire_nation'})
 
-    expect(page).to have_content('Total Fire Nation Members: 100')
+    expect(page).to have_content('Total Fire Nation Members: 97')
   end
 
   it "I see info for the first 25 members of that Nation" do
