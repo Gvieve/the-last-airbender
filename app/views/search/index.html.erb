@@ -6,7 +6,13 @@
   <h3>Members</h3>
   <ul>
     <% @characters.each do |character| %>
-      <b><li><%= character %></li></b>
+    <div id="member-<%= character.id %>">
+      <b><li>Name: <%= character.name %></li></b>
+      <img src="<%= character.photo_link %>" alt="Photo of <%= character.name %>"><br>
+      Allies: <%= character.allies %><br>
+      Enemies: <%= character.enemies %><br>
+      Affiliation: <%= character.affiliation %><br>
+    </div>
     <% end %>
   </ul>
 </section>
